@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Header</title>
+</head>
+<body>
+    <div class="container">
+        <div class="contact">
+            <img class="phone-icon" src="./assets/phone icon.png" alt="">
+            <span>+994 50 597 80 32</span>
+        </div>
+        <div class="options">
+            <div class="dropdown">
+                <select>
+                    <option>En</option>
+                    <option>Ru</option>
+                    <option>Az</option>
+                </select>
+            </div>
+            <div class="dropdown">
+                <select>
+                    <option>AZN</option>
+                    <option>USD</option>
+                    <option>EUR</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="logo">
+            <img src="./assets/logo.png" alt="Logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button class="btn-search">
+                <img style="height: 12px;" src="./assets/search.png" alt="Search">
+            </button>
+        </div>
+        <div class="icons">
+            <img style="width: 60px;" src="./assets/signin.png" alt="Sign in">
+            <img src="./assets/heart.png" alt="Favorites">
+            <img src="./assets/store.png" alt="Cart">
+        </div>
+    </div>
+    <div class="navbar" id="navbar">
+        <a href="#">Food</a>
+        <div class="dropdown">
+          <button class="dropbtn">Breakfast</button>
+          <div class="dropdown-content two-columns">
+              <div class="left-column">
+                <a href="#">Item 1</a>
+                <a href="#">Item 2</a>
+                <a href="#">Item 3</a>
+                <a href="#">Item 4</a>
+                <a href="#">Item 5</a>
+              </div>
+              <div class="right-column">
+                <a href="#">Item 6</a>
+                <a href="#">Item 7</a>
+                <a href="#">Item 8</a>
+                <a href="#">Item 9</a>
+                <a href="#">Item 10</a>
+              </div>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+          <button class="dropbtn">Snack</button>
+          <div class="dropdown-content two-columns">
+              <div class="left-column">
+                <a href="#">Item 1</a>
+                <a href="#">Item 2</a>
+                <a href="#">Item 3</a>
+                <a href="#">Item 4</a>
+                <a href="#">Item 5</a>
+              </div>
+              <div class="right-column">
+                <a href="#">Item 6</a>
+                <a href="#">Item 7</a>
+                <a href="#">Item 8</a>
+                <a href="#">Item 9</a>
+                <a href="#">Item 10</a>
+              </div>
+            </div>
+        </div>
+      
+        <div class="dropdown">
+          <button class="dropbtn">Meat, Fish, Chicken</button>
+          <div class="dropdown-content two-columns">
+              <div class="left-column">
+                <a href="#">Item 1</a>
+                <a href="#">Item 2</a>
+                <a href="#">Item 3</a>
+              </div>
+              
+            </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Drinks</button>
+          <div class="dropdown-content two-columns">
+            <div class="left-column">
+              <a href="#">Item 1</a>
+              <a href="#">Item 2</a>
+              <a href="#">Item 3</a>
+            </div>
+            <div class="right-column">
+              <a href="#">Item 4</a>
+              <a href="#">Item 5</a>
+              <a href="#">Item 6</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="dropdown">
+          <button class="dropbtn">Personal Care</button>
+          <div class="dropdown-content two-columns">
+              <div class="left-column">
+                <a href="#">Item 1</a>
+                <a href="#">Item 2</a>
+                <a href="#">Item 3</a>
+                <a href="#">Item 4</a>
+                
+              </div>
+              <div class="right-column">
+                  <a href="#">Item 5</a>
+                <a href="#">Item 6</a>
+                <a href="#">Item 7</a>
+              </div>
+            </div>
+        </div>
+       
+        <div class="dropdown">
+          <button class="dropbtn">General Cleaning</button>
+          <div class="dropdown-content two-columns">
+              <div class="left-column">
+                <a href="#">Item 1</a>
+                <a href="#">Item 2</a>
+                <a href="#">Item 3</a>
+               
+              </div>
+              
+            </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Home Life</button>
+          <div class="dropdown-content two-columns">
+              <div class="left-column">
+                <a href="#">Item 1</a>
+                <a href="#">Item 2</a>
+                <a href="#">Item 3</a>
+                <a href="#">Item 4</a>
+                <a href="#">Item 5</a>
+              </div>
+              
+            </div>
+        </div>
+        <a href="#">Herbal Products</a>
+        <a href="#">Campaigns</a>
+      
+        <div class="hamburger" onclick="toggleMenu()">
+          <div class="hamburger-icon"></div>
+          <div class="hamburger-icon"></div>
+          <div class="hamburger-icon"></div>
+        </div>
+      </div>
+      <script>
+        function toggleMenu() {
+          var x = document.getElementById("navbar");
+          if (x.className === "navbar") {
+            x.className += " responsive";
+          } else {
+            x.className = "navbar";
+          }
+        }
+        </script>
+</body>
+</html>
+
+
+
+
+
+
